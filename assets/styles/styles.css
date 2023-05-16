@@ -181,6 +181,70 @@ nav {
     .nav-toggle{
         display: none;
     }
+    /*get in touch button styles*/
+    .contact-btn{
+        text-decoration: none;
+        margin: 30px 30px 30px 20px;
+        color:var(--logo-color);
+        width:180px;
+        height: 50px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        position:relative;
+        letter-spacing: 3px;
+        line-height: 50px;
+    }
+    .contact-btn div{
+        position: relative;
+        width:100%;
+        line-height: 100%;
+        overflow:hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition:all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact-btn div:hover{
+        transform: scale(0.8);
+    }
+    .contact-btn div span.background{
+        background: var(--logo-color);
+        position: absolute;
+        width: 0;
+        height:100%;
+        left:-5%;
+        top:0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+    .contact-btn span.base{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        border: 1px solid var(--logo-color);
+        padding: 20px;
+
+    }
+    .contact-btn span.text{
+        position: relative;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+    }
+
+    .contact-btn:hover span.text{
+        color:var(--logo-color)
+    }
+
 
 
 }
