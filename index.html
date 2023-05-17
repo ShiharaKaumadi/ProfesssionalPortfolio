@@ -51,21 +51,22 @@
         <nav>
             <div class="div">
                 <!--Add My Logo and inline styles (Bouncing 😍 )-->
-                <a href="#"><i class="fa-solid fa-e fa-bounce"
+                <a href="#" class="bounce"><i class="fa-solid fa-e fa-bounce"
                                style="color: #f46410; width: 30px; height:30px;"></i></a>
+                <div class="nav-toggle" id="toggle">
+                    <!--Add Hamburger icon-->
+                    <span class="menu"><i class="fa-solid fa-bars"
+                                          style="color: #ffffff; width: 20px; height:20px; margin:0;"></i></span>
+                    <!--Add close icon-->
+                    <span class="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
+                </div>
             </div>
-            <div class="nav-toggle" id="toggle">
-                <!--Add Hamburger icon-->
-                <span class="menu"><i class="fa-solid fa-bars"
-                                      style="color: #ffffff; width: 20px; height:20px;"></i></span>
-                <!--Add close icon-->
-                <span class="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></span>
-            </div>
+
         </nav>
         <!-- Time To create menu bar-->
         <div class="menu-bar" id="menu-bar">
             <ul class="menu-items" id="menu-items">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#href">Education</a></li>
@@ -131,5 +132,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
 
 </script>
+</div>
+</header>
 </body>
 </html>

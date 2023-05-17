@@ -37,8 +37,6 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-
-
 }
 
 /*html styles*/
@@ -47,22 +45,34 @@ html {
 
 }
 
+
 /*header styles*/
 header {
     width: 100%;
-    height: auto;
+    height: 60px;
     background-color: var(--body-color);
     top: 0px;
-    left: 0px;
+    margin:0;
+    bottom:0;
     border-bottom: 2px solid #807a79;
     position: fixed;
     z-index: 3;
 }
+.div .bounce{
+    float: left;
+    left:0px;
+    position: absolute;
+    align-items: center;
+    top:7px;
+    bottom:20px;
+    margin: 10px 0 10px 20px;
+}
 
 .nav-bar {
     width: 90%;
-    margin: auto;
-    display: flex;                    /*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
+    margin: 0;
+
+                       /*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
      /*justify-content: space-between;  !*--------want to have space between content------------*!
      align-items: center;
      width: 100%;
@@ -76,6 +86,7 @@ header {
 nav {
     height: 15vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -97,7 +108,7 @@ nav {
 
 /*Add toggle dynamic*/
 .nav-toggle .close {
-    display: none;
+   /* display: none;*/
     font-size: 20px;
     color: white;
     cursor: pointer;
@@ -111,50 +122,46 @@ nav {
 .menu-bar {
     height: 0%;
     overflow: hidden;
-
     transition: all 0.7s linear;
 }
 
-{
-    position: relative;
-    background-size: auto;
-    padding: 10px 10px;
-    cursor: pointer;
-    text-decoration: none;
-
-
+.home .container{
+    margin-top:20px;
+    padding:0;
 }
 
 .menu-items {
-    list-style-type: none;
+    list-style: none;
+
 }
 
 .nav-bar li {
     text-align: center;
-    padding: 10px;
-
-
 }
 
 /*Time to style the menu links which are in anchor tags*/
 .nav-bar li a {
-    font-weight: regular;
+    font-weight: 300;
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
     font-family: 'Poppins',sans-serif;
-    position: relative;
+    position: fixed;
     text-align: center;
     align-items: center;
+    top: 15px;
+    bottom: 10px;
 
 }
-
+.about{
+    margin-top: 50px;
+}
 /*Lets add space between menue items*/
 .menu-items li a:hover {
     color: var(--logo-color);
 }
-.active{
+.menu-items .active{
     font-size: 1.2rem;
     color: var(--logo-color);
 }
@@ -187,6 +194,7 @@ nav {
     bottom: 60px;
     right: 30px;
     text-align: center;
+    display: none;
 }
 
 .social-icons a{
@@ -269,7 +277,7 @@ nav {
     left:0;
     width:200px;
     height:200px;
-   object-fit: cover;
+    object-fit: cover;
 
 }
 
@@ -294,6 +302,7 @@ nav {
 
 .hero-image img{
     display: block;
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -301,13 +310,15 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .nav-bar {
-        max-width: 1170px;
+        max-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0;
     }
 
     .menu-bar {
@@ -320,8 +331,9 @@ nav {
     }
 
     ul.menu-items li {
-        padding: 0;
-        width: 100px;
+        width: 130px;
+
+
     }
 
     .social-icons {
@@ -339,7 +351,8 @@ nav {
     }
 
     .nav-toggle {
-        /*display: none;*/
+        display: none;
+
     }
 
     /*Hero Section*/
@@ -350,7 +363,6 @@ nav {
     .container {
         width: 100%;
         margin:  150px 0px 50px 0px;
-        left:50px;
         display: flex;
         align-items: center;
 
@@ -358,8 +370,8 @@ nav {
 
     .about {
         font-family: 'Righteous', sans-serif;
-        magin-top: 100px;
-        margin-left: 50px;
+        magin-bottom: 800px;
+        margin-left: 30px;
     }
 
     .about h2 {
@@ -367,19 +379,21 @@ nav {
         font-size: 40px;
         letter-spacing: 10px;
         color: white;
+        margin-top: 10px;
 
     }
 
     .about #name {
         font-family: 'Bungee Spice', cursive;
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: 10px;
         margin-top: 20px;
+        padding: 20px 20px 20px 0;
     }
 
     .about #quote {
-        color: darkgoldenrod;
-        margin-top: 20px;
+        color: #ad9251;
+       /* margin-top: 20px;*/
         font-size: 20px;
         letter-spacing: 2px;
         font-family: 'Anton', "Segoe Print";
