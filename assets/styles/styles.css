@@ -2,12 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 /*common styles*/
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*:root {
+    --boxSize: 1em;
+    --speed: 18s;
+    --rotateSceneX: -0deg;
+    --rotateSceneY: 0deg;
+}*/
 
 a {
     text-decoration: none;
@@ -20,49 +29,53 @@ li {
 /*Body Styles*/
 body {
     --txt-color: white;
-    --logo-color: #f46410;
+    --logo-color: rgba(236, 105, 27, 0.94);
     --body-color: rgba(31, 31, 31, 0.98);
     /*------------------------*/
     font-family: 'Roboto', 'Anton', 'Righteous', 'Poppins', sans-serif, -apple-system;
     background: var(--body-color);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+
 }
 
 /*html styles*/
 html {
     scroll-behavior: smooth;
+
 }
 
 /*header styles*/
 header {
     width: 100%;
-    height:100%;
+    height: auto;
     background-color: var(--body-color);
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     border-bottom: 2px solid #807a79;
+    position: fixed;
     z-index: 3;
 }
 
 .nav-bar {
     width: 90%;
     margin: auto;
-    /* position: fixed;                   !*--------navigation links are fixed------------*!
-     display: flex;                    !*--------display all items in one row------------*!
-     flex-direction: row;             !*--------flex direction is row------------*!
-     justify-content: space-between;  !*--------want to have space between content------------*!
+    display: flex;                    /*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
+     /*justify-content: space-between;  !*--------want to have space between content------------*!
      align-items: center;
      width: 100%;
      padding:5px;
      background: transparent;
      transition:all .5s ease;
-     overflow: hidden;*/
-
+    overflow: hidden;*!
+*/
 }
 
 nav {
     height: 15vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -70,181 +83,390 @@ nav {
     font-size: 20px;
     color: white;
     cursor: pointer;
-    transition: 0.3s all  linear;
+    float: right;
+    left: 1200px;
+    position: relative;
+    transition: 0.3s  linear;
 
 }
 
-/*I wanto rotate these icons to -45 deg*/
-.nav-toggle .menu .fa-bars:hover{
-    transform:scale(0.8) rotate(-45deg);
+/* rotate these icons to -45 deg*/
+.nav-toggle .menu:hover {
+    transform: scale(0.8) rotate(-45deg);
 }
+
 /*Add toggle dynamic*/
 .nav-toggle .close {
     display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    float: right;
+    left: 1260px;
+    position: relative;
+    transition: 0.3s  linear;
 }
+
 /*Time to add styles for nav bar*/
-.menu-bar{
+.menu-bar {
     height: 0%;
     overflow: hidden;
-    transition:all 0.7s linear;
-}
-.menu-items{
-    list-style-type: none;
+
+    transition: all 0.7s linear;
 }
 
-.nav-bar li{
-    padding:10px;
-    text-align: center;
-}
-/*Time to style the menue links which are in anchor tags*/
-.nav-bar li a{
-    font-weight: bold;
-    font-size: medium;
-    color: #ffffff;
-    cursor: pointer;
-}
-/*Lets add space between menue items*/
-.menu-items li a:hover{
-    color: var(--logo-color);
- }
-/*Lets add social link styles*/
-.menu-bar .social-icons{
-    text-align: center;
-    justify-content: space-between;
-}
-.menu-bar .social-icons a{
-    text-decoration: none;
-}
-
-.menu-bar .social-icons .fa-brands{
-    margin: 35px 20px;
-    font-size: 30px;
-    color: var(--logo-color);
-    -webkit-transition:  0.3s all ease-in-out;
-    -o-transition:  0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
-
-}
-
-.menu-bar .social-icons .fa-brands:hover{
-    color: var(--logo-color);
-}
-.resume{
-    display: inline-block;
+{
+    position: relative;
     background-size: auto;
     padding: 10px 10px;
     cursor: pointer;
     text-decoration: none;
-    text-transform:uppercase;
+
+
+}
+
+.menu-items {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+/*Time to style the menu links which are in anchor tags*/
+.nav-bar li a {
+    font-weight: regular;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    text-align: center;
+    align-items: center;
+
+}
+
+/*Lets add space between menue items*/
+.menu-items li a:hover {
+    color: var(--logo-color);
+}
+.active{
+    font-size: 1.2rem;
+    color: var(--logo-color);
+}
+/*Lets add social link styles*/
+.menu-bar .social-icons {
+    text-align: center;
+    justify-content: space-between;
+}
+
+/*.menu-bar .social-icons a {
+    text-decoration: none;
+}*/
+
+.menu-bar .social-icons .fa-brands {
+    margin: 35px 20px;
+    font-size: 30px;
+    color: var(--logo-color);
+    -webkit-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.menu-bar .social-icons .fa-brands:hover {
+    color: var(--logo-color);
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    text-align: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+.social-icons .fa-brands{
+    margin: 35px 20px;
+    font-size: 1.5rem;
+    color: #be8c7c;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+
+.social-icons.fa-brands:hover{
     color:var(--logo-color);
+}
+
+.icons{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.icons a{
+    text-decoration: none;
+    padding-bottom: 10px;
+
+}
+.icons .fa-brands{
+    display: block;
+    font-size: 1.3rem;
+    color:#be8c7c;
+    margin-bottom: 20px;
+    transition: 200ms ease-in-out;
+}
+
+.icons .fa-brands:hover{
+    color:var(--logo-color);
+}
+.hero-image {
+    position: absolute;
+    width:100px;
+    height: 100px;
+    right:350px;
+    bottom: 0;
+    transform-style: preserve-3d;
+    /*display: none;*/
+    top:150px;
+    animation: hero 20s linear infinite;
+}
+
+@keyframes hero {
+    0%{
+        transform:perspective(2000px) rotateY(0deg);
+    }
+    100%{
+        transform:perspective(2000px) rotateY(360deg);
+    }
+}
+
+.hero-image span{
+    position:absolute;
+    top:0;
+    left:0px;
+    width:100px;
+    height:100px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--img)*45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.hero-image span img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+   object-fit: cover;
+
+}
+
+.resume {
+    display: none;
+    background-size: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--logo-color);
     border: 1px solid var(--logo-color);
     transition: all 0.3s ease-in-out;
 }
 
-.resume:hover{
-    color:var(--body-color);
+.resume:hover {
+    color: var(--body-color);
     background-color: var(--logo-color);
     transform: scale(1.1);
 
 }
 
-@media screen and (min-width: 1024px){
-    header{
+.hero-image img{
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .nav-bar{
+    .nav-bar {
         max-width: 1170px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .menu-bar{
-        height:auto !important;
+
+    .menu-bar {
+        height: auto !important;
     }
-    ul.menu-items{
+
+    ul.menu-items {
         display: flex;
-        height:auto;
+        height: auto;
     }
-    ul.menu-items li{
+
+    ul.menu-items li {
         padding: 0;
         width: 100px;
     }
-    .social-icons{
-        display:none;
-    }
-    .resume{
-        display: block;
-    }
-    .nav-toggle{
+
+    .social-icons {
         display: none;
+
     }
-    /*get in touch button styles*/
-    .contact-btn{
-        text-decoration: none;
-        margin: 30px 30px 30px 20px;
-        color:var(--logo-color);
-        width:180px;
-        height: 50px;
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        position:relative;
-        letter-spacing: 3px;
-        line-height: 50px;
-    }
-    .contact-btn div{
-        position: relative;
-        width:100%;
-        line-height: 100%;
-        overflow:hidden;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition:all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
-    .contact-btn div:hover{
-        transform: scale(0.8);
+    .resume {
+        display: flex;
     }
-    .contact-btn div span.background{
-        background: var(--logo-color);
-        position: absolute;
-        width: 0;
-        height:100%;
-        left:-5%;
-        top:0;
+
+    .nav-toggle {
+        /*display: none;*/
+    }
+
+    /*Hero Section*/
+    .home {
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        margin:  150px 0px 50px 0px;
+        left:50px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .about {
+        font-family: 'Righteous', sans-serif;
+        magin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .about h2 {
+        width: 200px;
+        font-size: 40px;
+        letter-spacing: 10px;
+        color: white;
+
+    }
+
+    .about #name {
+        font-family: 'Bungee Spice', cursive;
+        font-size: 40px;
+        letter-spacing: 10px;
+        margin-top: 20px;
+    }
+
+    .about #quote {
+        color: darkgoldenrod;
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Anton', "Segoe Print";
+    }
+
+
+    /*get in touch button styles*/
+    .contact-btn {
+        text-decoration: none;
+        text-align: center;
+        margin: 16px 0px 50px 0px;
+        color: var(--logo-color);
+        display: block;
+        align-items: center;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 3px;
+        width: fit-content;
+        text-align: center;
+
+    }
+
+    .contact-btn div {
+        position: relative;
+        width: fit-content;
+        overflow: hidden;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        -webkit-transform: skewX(-20deg);
-        -ms-transform: skewX(-20deg);
-        transform: skewX(-20deg);
+
     }
-    .contact-btn span.base{
+
+    .contact-btn div:hover {
+        transform: scale(0.9);
+        background: var(--logo-color);
+
+    }
+
+    .contact-btn div span.background {
+        background: #be8c7c;
+        background-position: center;
+        position: absolute;
+        width: fit-content;
+        left: -5%;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        -webkit-transition: 0.3s all ease-in-out;
+        -o-transition: 0.3s all ease-in-out;
+        transition: 0.3s all ease-in-out;
+        -webkit-transform: skewX(-19deg);
+        -ms-transform: skewX(-19deg);
+        transform: skewX(-19deg);
+
+    }
+
+    .contact-btn:hover div span.background {
+        width: fit-content;
+
+    }
+
+    .contact-btn span.base {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         position: absolute;
-        width:100%;
-        height:100%;
-        left:0;
-        border: 1px solid var(--logo-color);
-        padding: 20px;
-
+        width: fit-content;
+        left: 0;
     }
-    .contact-btn span.text{
+
+    .contact-btn .text {
+        padding: 10px 10px 10px 10px;
+        width: fit-content;
+        text-align: center;
+        border-style: solid;
+        top: 0;
+        left: 0;
+        right: 0;
         position: relative;
-        width:100%;
-        height:100%;
-        top:0;
-        left:0;
+        font-weight: bold;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        border: 1px solid var(--logo-color);
     }
 
-    .contact-btn:hover span.text{
-        color:var(--logo-color)
+    .contact-btn:hover div.text {
+        color: black;
     }
-
-
 
 }

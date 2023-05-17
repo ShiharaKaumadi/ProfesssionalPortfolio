@@ -26,11 +26,18 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--Colored font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <!--Font awsome -->
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           rel="stylesheet">
+    <link rel="stylesheet" href="https://www.1001fonts.com/colorful-fonts.html?fg=e9650b">
     <link href="assets/styles/styles.css" rel="stylesheet">
+    <!--CDN CSS Styles-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Eshani Shihara</title>
     <!--Animate css-->
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -66,11 +73,11 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook" style="width: 30px; height:30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp" style="width: 30px; height:30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin" style="width: 30px; height:30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-hackerrank" style="width: 30px; height:30px;"></i></a>
-                <a href="#"><i class="fa-brands fa-github" style="width: 30px; height:30px;"></i></a>
+                <a href="#" class="so"><i class="fa-brands fa-facebook" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
+                <a href="#" class="so"><i class="fa-brands fa-whatsapp" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
+                <a href="#" class="so"><i class="fa-brands fa-linkedin" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
+                <a href="#" class="so"><i class="fa-brands fa-hackerrank" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
+                <a href="#" class="so"><i class="fa-brands fa-github" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
             </div>
         </div>
         <a class="resume" href="#">Resume</a>
@@ -81,20 +88,44 @@
 <section class="home" id="home">
     <div class="container">
         <div class="about">
-            <h2>Hi!</h2>
-            <h1>I'm <img src="assets/images/hero.jpg" alt="hero-img" width="50px" height="auto">Shihara</h1>
-            <p><q>Inspired to Coding, Designing, Thinking, and Searching </q></p>
+            <h2>Hi !</h2>
+            <h1 id="name">I'm Shihara</h1>
+            <p id="quote"><q>Inspired to Coding, Designing, Thinking, and Searching </q></p>
             <a href="#contact" class="contact-btn">
                 <div>
                     <span class="background"></span>
                     <span class="base"></span>
-                    <span class="text">Get in Touch</span>
+                    <div class="text">Get in Touch</div>
                 </div>
             </a>
         </div>
     </div>
 </section>
 
+<div class="icons">
+    <a href="#" class="link"><i class="fa-brands fa-facebook" style="width: 30px; height:30px; color: #ff9e59;"></i></a>
+    <a href="#" class="link"><i class="fa-brands fa-whatsapp" style="width: 30px; height:30px;color: #ff9e59;"></i></a>
+    <a href="#" class="link"><i class="fa-brands fa-linkedin" style="width: 30px; height:30px;color: #ff9e59;"></i></a>
+    <a href="#" class="link"><i class="fa-brands fa-hackerrank" style="width: 30px; height:30px;color: #ff9e59;"></i></a>
+    <a href="#" class="link"><i class="fa-brands fa-github" style="width: 30px; height:30px;color: #ff9e59;"></i></a>
+</div>
+
+<div class="hero-image" >
+   <span style="--img:1"><img src="assets/images/coding-girl.jpg" alt="images"></span>
+    <span style="--img:3"><img src="assets/images/hero-image.jpg" alt="images"></span>
+    <span style="--img:4"><img src="assets/images/travel.jpeg" alt="images"></span>
+    <span style="--img:6"><img src="assets/images/proffesional.jpeg" alt="images"></span>
+    <span style="--img:8"><img src="assets/images/relaxing.jpeg" alt="images"></span>
+    <span style="--img:2"><img src="assets/images/hero.jpg" alt="images"></span>
+    <span style="--img:5"><img src="assets/images/free.jpeg" alt="images"></span>
+    <span style="--img:7"><img src="assets/images/reading.jpeg" alt="images"></span>
+</div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script crossorigin="anonymous"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
