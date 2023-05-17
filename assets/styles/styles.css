@@ -90,7 +90,7 @@ nav {
     align-items: center;
 }
 
-.nav-toggle .menu {
+.nav-toggle i {
     font-size: 20px;
     color: white;
     cursor: pointer;
@@ -108,12 +108,12 @@ nav {
 
 /*Add toggle dynamic*/
 .nav-toggle .close {
-   /* display: none;*/
+    display: none;
     font-size: 20px;
     color: white;
     cursor: pointer;
     float: right;
-    left: 1260px;
+    left: 1200px;
     position: relative;
     transition: 0.3s  linear;
 }

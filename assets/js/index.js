@@ -15,5 +15,11 @@ function navLinks(){
         menuBar.style.height=`${navLinksHeight}px`;
         close.style.display="block";
         menu.style.display="none";
+    }else if (navBarHeight===navLinksHeight){
+        menuBar.style.height=0;
+        close.style.display="none";
+        menu.style.display="block";
     }
 }
+
+toggleIcon.addEventListener("click",navLinks);
