@@ -148,7 +148,7 @@ header {
     width: 90%;
     margin: 0;
 
-                       /*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
+/*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
      /*justify-content: space-between;  !*--------want to have space between content------------*!
      align-items: center;
      width: 100%;
@@ -379,6 +379,138 @@ nav {
 .hero-image img{
     display: block;
 
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Lets start the About Section Styles*/
+
+.switch-wrapper {
+    position: absolute;
+    margin-top: 20px;
+    max-width: 1375px;
+    display: none;
+}
+.switch-btn {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--logo-color);
+    color: #fff;
+    transition: width 0.3s linear;
+    -webkit-transition: width 0.3s linear;
+}
+.switch-btn span {
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+.switch-btn:hover {
+    width: 60px;
+}
+.switch-wrapper::after {
+    content: "play or pause animation";
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: var(--logo-color);
+    font-family: "-apple-system", cursive;
+    font-size: 14px;
+}
+.switch-btn .fa-pause {
+    display: none;
+}
+/* -----SECTION-2----- */
+.about-section {
+    width: 85%;
+    margin: 30px 25px 30px 25px;
+}
+.self-discovery .about {
+    font-size: 70px;
+    color: #464545;
+}
+.myself {
+    width: 329px;
+    margin: auto;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    text-align: justify;
+    position: relative;
+    top: -10px;
+    left: -20px;
+    color: var(--logo-color);
+}
+.myself::before {
+    content: "";
+    width: 350px;
+    height: 2px;
+    background: var(--logo-color);
+    position: absolute;
+    bottom: 0;
+    left: -380px;
+    display: none;
+}
+.myself::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--logo-color);
+    position: absolute;
+    bottom: 0;
+    left: -380px;
+    display: none;
+}
+
+.animate.myself::after {
+    animation: ball 20s ease-in-out infinite alternate;
+    -webkit-animation: ball 20s ease-in-out infinite alternate;
+    -o-animation: ball 20s ease-in-out infinite alternate;
+}
+@keyframes ball {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        z-index: -999;
+    }
+    100% {
+        transform: translateX(325px);
+    }
+}
+
+
+.content1 p {
+    width: 60%;
+    font-size: 20px;
+    color: #9f9d9d;
+    font-weight: 300;
+    font-family: "Roboto Thin";
+    line-height: 2.5rem;
+    text-align: justify;
+}
+.para1 {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+/*.para1 img {
+    width: 150px;
+    height: auto;
+    filter: opacity(0.3);
+    transform: rotate(-45deg);
+    top: -80px;
+    right: 20px;
+    display: none;
+    position: absolute;
+}*/
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
 }
 
 @media screen and (min-width: 1024px) {
