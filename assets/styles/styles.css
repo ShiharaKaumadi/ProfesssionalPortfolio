@@ -4,6 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+
+
+
+/*------------------------------------------------------------------------------*/
 /*common styles*/
 *, *::before, *::after {
     margin: 0;
@@ -33,10 +43,76 @@ body {
     --body-color: rgba(31, 31, 31, 0.98);
     /*------------------------*/
     font-family: 'Roboto', 'Anton', 'Righteous', 'Poppins', sans-serif, -apple-system;
-    background: var(--body-color);
+    /*background: var(--body-color);*/
     margin: 0;
     width: 100%;
     height: 100%;
+    /*background animations*/
+
+    color: #999;
+
+
+    /* img size is 50x50 */
+    background: url("../images/background.jpg") repeat 10px 10px;
+    background-color: rgba(31, 31, 31, 0.98);
+
+   -webkit-animation: bg-scrolling-reverse 10s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 10s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 10s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 10s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+body::before {
+    font-size: 8rem;
+    font-weight: 100;
+    font-style: normal;
+}
+@-webkit-keyframes bg-scrolling-reverse {
+    50% {
+        background-position: 50px 50px;
+    }
+}
+@-moz-keyframes bg-scrolling-reverse {
+   50% {
+        background-position: 50px 50px;
+    }
+}
+@-o-keyframes bg-scrolling-reverse {
+    50% {
+        background-position: 50px 50px;
+    }
+}
+@keyframes bg-scrolling-reverse {
+    50% {
+        background-position: 50px 50px;
+    }
+}
+@-webkit-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@-moz-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@-o-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+@keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
 }
 
 /*html styles*/
@@ -166,16 +242,16 @@ nav {
     color: var(--logo-color);
 }
 /*Lets add social link styles*/
-.menu-bar .social-icons {
+/*.menu-bar .social-icons {
     text-align: center;
     justify-content: space-between;
-}
+}*/
 
 /*.menu-bar .social-icons a {
     text-decoration: none;
 }*/
 
-.menu-bar .social-icons .fa-brands {
+/*.menu-bar .social-icons .fa-brands {
     margin: 35px 20px;
     font-size: 30px;
     color: var(--logo-color);
@@ -183,11 +259,11 @@ nav {
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
 
-}
+}*/
 
-.menu-bar .social-icons .fa-brands:hover {
+/*.menu-bar .social-icons .fa-brands:hover {
     color: var(--logo-color);
-}
+}*/
 
 .social-icons {
     position: absolute;
@@ -337,13 +413,34 @@ nav {
     }
 
     .social-icons {
-        display: none;
+        text-align: center;
 
     }
+/*
+    .social-icons .fa-brands {
+        margin: 35px 20px;
+        font-size: 1.5rem;
+        color: #3b3a3a;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .social-icons .fa-brands:hover {
+        color: var(--logo-color);
+    }
+
+    .social-icons a {
+        text-decoration: none;
+    }*/
+
     .icons{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+    }
+    .icons .fa-brands:hover {
+        color: var(--logo-color);
     }
 
     .resume {
@@ -378,7 +475,7 @@ nav {
         width: 200px;
         font-size: 40px;
         letter-spacing: 10px;
-        color: white;
+        color: #c46e33;
         margin-top: 10px;
 
     }
@@ -389,6 +486,14 @@ nav {
         letter-spacing: 10px;
         margin-top: 20px;
         padding: 20px 20px 20px 0;
+    }
+
+    .about #job {
+        font-size: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 5px;
+        padding: 5px 20px 20px 0;
     }
 
     .about #quote {

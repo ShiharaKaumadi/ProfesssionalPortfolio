@@ -22,4 +22,16 @@ function navLinks(){
     }
 }
 
-toggleIcon.addEventListener("click",navLinks);
+toggleIcon.addEventListener("click",navLinks  );
+
+const linkelement = document.querySelectorAll(".link");
+
+linkelement.forEach(function (linkItem){
+    linkItem.addEventListener("click",function (item){
+        toggleIcon.style.height=0;
+        menu.style.display ="block";
+        close.style.display="none";
+    });
+})
+
+
