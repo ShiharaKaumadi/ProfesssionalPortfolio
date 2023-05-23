@@ -34,4 +34,14 @@ linkelement.forEach(function (linkItem){
     });
 })
 
-
+/*========================================================*/
+/*
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+sr.reveal(`.specs_data`,{origin: 'left', interval: 100})
+sr.reveal(`.specs_img`,{origin: 'right'})
+*/

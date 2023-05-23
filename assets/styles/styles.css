@@ -52,7 +52,7 @@ body {
     background: url("../images/blackbg.jpg") repeat 10px 10px;
     background-color: rgba(31, 31, 31, 0.98);
 
-   -webkit-animation: bg-scrolling-reverse 10s infinite;
+    -webkit-animation: bg-scrolling-reverse 10s infinite;
     /* Safari 4+ */
     -moz-animation: bg-scrolling-reverse 10s infinite;
     /* Fx 5+ */
@@ -76,7 +76,7 @@ body::before {
     }
 }
 @-moz-keyframes bg-scrolling-reverse {
-   50% {
+    50% {
         background-position: 50px 50px;
     }
 }
@@ -144,14 +144,14 @@ header {
     width: 90%;
     margin: 0;
 
-/*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
-     /*justify-content: space-between;  !*--------want to have space between content------------*!
-     align-items: center;
-     width: 100%;
-     padding:5px;
-     background: transparent;
-     transition:all .5s ease;
-    overflow: hidden;*!
+    /*--------display all items in one row------------*/-direction: row;             /*--------flex direction is row------------*/
+    /*justify-content: space-between;  !*--------want to have space between content------------*!
+    align-items: center;
+    width: 100%;
+    padding:5px;
+    background: transparent;
+    transition:all .5s ease;
+   overflow: hidden;*!
 */
 }
 
@@ -544,23 +544,23 @@ nav {
         text-align: center;
 
     }
-/*
-    .social-icons .fa-brands {
-        margin: 35px 20px;
-        font-size: 1.5rem;
-        color: #3b3a3a;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
+    /*
+        .social-icons .fa-brands {
+            margin: 35px 20px;
+            font-size: 1.5rem;
+            color: #3b3a3a;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
 
-    .social-icons .fa-brands:hover {
-        color: var(--logo-color);
-    }
+        .social-icons .fa-brands:hover {
+            color: var(--logo-color);
+        }
 
-    .social-icons a {
-        text-decoration: none;
-    }*/
+        .social-icons a {
+            text-decoration: none;
+        }*/
 
     .icons{
         display: flex;
@@ -627,7 +627,7 @@ nav {
 
     .about #quote {
         color: #ad9251;
-       /* margin-top: 20px;*/
+        /* margin-top: 20px;*/
         font-size: 20px;
         letter-spacing: 2px;
         font-family: 'Anton', "Segoe Print";
@@ -744,12 +744,12 @@ nav {
 }
 
 .specs_subtitle {
-    font-size: .75rem.specs_img {
-                      width: 250px;
-                      position: absolute;
-                      top: 2rem;
-                      right: -4rem;
-                  }
+font-size: .75rem.specs_img {
+                  width: 250px;
+                  position: absolute;
+                  top: 2rem;
+                  right: -4rem;
+              }
 
 
 .specs_img:hover{
