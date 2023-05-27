@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 
 
@@ -712,11 +712,8 @@ nav {
     margin-top: 200px;
     margin-bottom: 20px;
     margin-left:80px;
-    display: block;
+    display: inline-block;
     min-height: 100px;
-
-
-
 }
 
 .container-skill .icon-skill{
@@ -771,9 +768,11 @@ nav {
     position: absolute;
     inset: 0;
     overflow: hidden;
-    display: flex;
+    display: grid;
+    place-items: center;
     justify-content: center;
     align-items: center;
+
 }
 
 .content-skill::before{
@@ -828,7 +827,7 @@ nav {
     transition: 1s;
     opacity:0;
     display:flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -879,4 +878,76 @@ nav {
     line-height: 3px;
     text-transform: uppercase;
 
+}
+
+/*Quote Styles*/
+.cursor {
+    position: absolute;
+    background-color: rgba(140, 120, 120, 0.3);
+    border-radius: 0.4rem;
+    width: 1.2rem;
+    aspect-ratio: 1;
+    pointer-events: visible;
+}
+
+.quote-block {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    display: grid;
+    font-family: 'Dancing Script',cursive;
+    place-items: self-end;
+    color: rgb(245, 53, 10);
+
+    float: right;
+    margin-top: 150px;
+    right: 100px;
+    margin-right: 50px;
+
+
+}
+.container-skill, .quote-block{
+    display: inline-block;
+
+}
+
+.quote-block .poster {
+    box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.01), 0 0 0 0.6rem rgba(255, 255, 255, 0.02), 0 0 0 0.9rem rgba(255, 255, 255, 0.03);
+    transition: 300ms ease;
+    background-color: rgba(208, 133, 133, 0.07);
+    border-radius: 4rem 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: clamp(300px, 60vmin, 66vh);
+    height: clamp(500px, 60vmin, 80vh);
+    padding: 3rem 4rem;
+}
+.quote-block .poster:has(.quote:hover) {
+    box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.01), 0 0 0 1.6rem rgba(255, 255, 255, 0.02), 0 0 0 2.4rem rgba(255, 255, 255, 0.03);
+}
+.quote-block .poster:has(.quote:hover) .quote {
+    color: rgb(224, 190, 23);
+}
+.quote-block .poster:has(.quote:hover) .quote span {
+    color: rgb(245, 202, 3);
+}
+.quote-block .poster:has(.quote:hover) .name {
+    color: rgb(234, 195, 0);
+}
+.quote-block .poster .quote {
+    font-size: 3rem;
+    text-shadow: 0 0 #f30707, 0 0 #f3c704;
+
+}
+.quote-block .poster .quote, .quote-block .poster .quote span {
+    transition: 9s ease-in-out;
+}
+.quote-block .poster .name {
+    font-size: 35px;
+    font-weight: 500;
+    transition: 9s  ease;
+}
+.quote-block .poster .name:before {
+    content: "- ";
 }
