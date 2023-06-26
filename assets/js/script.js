@@ -1,15 +1,43 @@
+function openDropDownMenu() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const closeIcon = document.getElementsByClassName('close');
+    dropdownMenu.style.display = 'block';
+    // Clear any existing content
+    dropdownMenu.innerHTML = '';
+
+    // Create and append menu items
+    const menuItems = document.querySelectorAll('.link');
+    menuItems.forEach((item, index) => {
+        const menuItem = document.createElement('a');
+        menuItem.textContent = item.textContent;
+        menuItem.href = item.href;
+        dropdownMenu.appendChild(menuItem);
+
+        // Add separator except for the last item
+        if (index < menuItems.length - 1) {
+            const separator = document.createElement('div');
+            separator.classList.add('separator');
+            dropdownMenu.appendChild(separator);
+        }
+    });
+
+    dropdownMenu.style.display = 'block';
+
+    closeIcon.style.display = 'block';
+}
+
+function closeDropDownMenu() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const closeIcon = document.getElementsByClassName('close');
+    const menuIcon = document.getElementsByClassName('menu');
+
+    dropdownMenu.style.display = 'none';
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+}
 
 
-//Responsive NavBar
-const toggleIcon =document.querySelector(".nav-toggle");
-const menu =document.querySelector(".menu");
-const close =document.querySelector(".close");
-
-const menuBar =document.querySelector(".menu-bar");
-const menuItems =document.querySelector(".menu-items");
-
-
-//getBoundingClientReact()
+/*//getBoundingClientReact()
 function navLinks(){
     const navBarHeight = menuBar.getBoundingClientRect().height;
     const navLinksHeight = menuItems.getBoundingClientRect().height;
@@ -27,15 +55,10 @@ function navLinks(){
 
 toggleIcon.addEventListener("click",navLinks  );
 
-const linkelement = document.querySelectorAll(".link");
+const linkelement = document.querySelectorAll(".link");*/
 
-linkelement.forEach(function (linkItem){
-    linkItem.addEventListener("click",function (item){
-        toggleIcon.style.height=0;
-        menu.style.display ="block";
-        close.style.display="none";
-    });
-})
+
+
 
 /*========================================================*/
 
@@ -98,3 +121,31 @@ $(document).ready(function(){
 });
 
 /*=====================================================================================================================*/
+
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
