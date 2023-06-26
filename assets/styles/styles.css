@@ -42,7 +42,7 @@ body {
     /*background: var(--body-color);*/
     margin: 0;
     width: 100%;
-
+    height: 100%;
     /*background animations*/
     color: #999;
 
@@ -155,37 +155,6 @@ header {
     height: 40px;
 }
 
-<<<<<<< HEAD
-.nav-bar {
-
-    margin: 0;
-
-
-    align-items: center;
-    width: 100%;
-    padding:5px;
-    background: transparent;
-    transition:all .5s ease;
-    overflow: hidden;
-
-}
-
-nav {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-bar .menu {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    top:15px;
-    left: 20px;
-    position: absolute;
-    transition: 0.3s  linear;
-=======
 /*new nav */
 .navbar {
     background-color: var(--body-color);
@@ -196,7 +165,6 @@ nav {
 /*    width: 90%;*/
 /*    margin: 0;*/
 
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
 
 /*    align-items: center;*/
 /*    width: 100%;*/
@@ -205,23 +173,6 @@ nav {
 /*    transition: all .5s ease;*/
 /*    overflow: hidden;*/
 
-<<<<<<< HEAD
-/* rotate these icons to -45 deg*/
-
-
-/*Add toggle dynamic*/
-#dropdown-menu .close {
-    display: none;
-    font-size: 20px;
-    color: #1a1919;
-    cursor: pointer;
-    margin-top:55px;
-    left: 30px;
-    position: relative;
-    transition: 0.3s  linear;
-    right: 0;
-}
-=======
 /*}*/
 
 /*nav {*/
@@ -258,7 +209,6 @@ nav {
 /*    position: relative;*/
 /*    transition: 0.3s linear;*/
 /*}*/
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
 
 /*Time to add styles for nav bar*/
 .menu-bar {
@@ -277,30 +227,6 @@ nav {
 
 }
 
-<<<<<<< HEAD
-.nav-bar li {
-
-    text-align: center;
-    margin: 10px 10px;
-    color: #ecc712;
-}
-
-/*Time to style the menu links which are in anchor tags*/
-.nav-bar li a {
-    font-weight: 300;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ecc712;
-    cursor: pointer;
-    font-family: 'Poppins',sans-serif;
-    position: fixed;
-    text-align: center;
-    align-items: center;
-    top: 15px;
-    margin: 10px 10px;
-
-    overflow: hidden;
-=======
 /*.nav-bar li {*/
 /*    text-align: center;*/
 /*}*/
@@ -319,7 +245,6 @@ nav {
 /*    top: 15px;*/
 /*    bottom: 10px;*/
 /*    overflow: hidden;*/
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
 
 /*}*/
 
@@ -332,84 +257,6 @@ nav {
     font-size: 1.2rem;
     color: var(--logo-color);
 }
-<<<<<<< HEAD
-#dropdown-menu {
-    width:100%;
-    display: none;
-    position: relative;
-    background-color: #b7b6b6;
-    top: 50px;
-    left: 0;
-    right:0;
-    color: #ecc712;
-    padding: 20px 20px;
-    justify-items: center;
-    text-align: center;
-    font-size: 15px;
-    height:200px;
-
-
-    /* Additional styles as needed */
-}
-
-
-/*======================Media Queries for Nav Bar==========================*/
-@media screen and (min-width: 250px) and (max-width: 576px){
-    .menu {
-        display: block;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-}
-@media screen and (min-width: 577px) and (max-width: 612px){
-    .menu {
-        display: block;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-}
-@media screen and (min-width: 613px) and (max-width: 768px){
-    .menu {
-        display: block;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 912px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-bar {
-        display: inline-flex;
-    }
-}
-@media screen and (min-width: 913px) and (max-width: 1024px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-bar {
-        display: inline-flex;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 2800px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-bar {
-        display: inline-flex;
-    }
-}
-=======
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
 
 /*Lets add social link styles*/
 .menu-bar .social-icons {
@@ -672,7 +519,6 @@ nav {
         align-items: center;
         justify-content: center;
         margin: 0;
-        z-index: 999;
     }
 
     /*.nav-bar {*/
@@ -703,15 +549,9 @@ nav {
     }
 
     .icons {
-<<<<<<< HEAD
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-=======
         /*display: flex;*/
         /*justify-content: space-around;*/
         /*flex-direction: column;*/
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
     }
 
     .icons .fa-brands:hover {
@@ -722,162 +562,14 @@ nav {
         display: flex;
     }
 
-<<<<<<< HEAD
-    .nav-toggle {
-        display: none;
-
-    }
-}
-
-/*    !*Hero Section*!
-=======
     /*.nav-toggle {*/
     /*    display: none;*/
     /*}*/
     /*Hero Section*/
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
     .home {
         position: relative;
     }
 
-<<<<<<< HEAD
-    .container {
-        width: 100%;
-        margin:  150px 0px 50px 0px;
-        display: flex;
-        align-items: center;
-
-    }
-
-    .about {
-        font-family: 'Righteous', sans-serif;
-        magin-bottom: 800px;
-        margin-left: 30px;
-    }
-
-    .about h2 {
-        width: 200px;
-        font-size: 40px;
-        letter-spacing: 10px;
-        color: #c46e33;
-        margin-top: 10px;
-
-    }
-
-    .about #name {
-        font-family: 'Bungee Spice', cursive;
-        font-size: 50px;
-        letter-spacing: 10px;
-        margin-top: 20px;
-        padding: 20px 20px 20px 0;
-    }
-
-    .about #job {
-        font-size: 2rem;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-top: 5px;
-        padding: 5px 20px 20px 0;
-    }
-
-    .about #quote {
-        color: #ad9251;
-        !* margin-top: 20px;*!
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-family: 'Anton', "Segoe Print";
-    }
-
-
-    !*get in touch button styles*!
-    .contact-btn {
-        text-decoration: none;
-        text-align: center;
-        margin: 16px 0px 50px 0px;
-        color: var(--logo-color);
-        display: block;
-        align-items: center;
-        text-transform: uppercase;
-        position: relative;
-        letter-spacing: 3px;
-        width: fit-content;
-        text-align: center;
-
-    }
-
-    .contact-btn div {
-        position: relative;
-        width: fit-content;
-        overflow: hidden;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-
-    }
-
-    .contact-btn div:hover {
-        transform: scale(0.9);
-        background: var(--logo-color);
-
-    }
-
-    .contact-btn div span.background {
-        background: #be8c7c;
-        background-position: center;
-        position: absolute;
-        width: fit-content;
-        left: -5%;
-        top: 0px;
-        right: 0px;
-        bottom: 0;
-        -webkit-transition: 0.3s all ease-in-out;
-        -o-transition: 0.3s all ease-in-out;
-        transition: 0.3s all ease-in-out;
-        -webkit-transform: skewX(-19deg);
-        -ms-transform: skewX(-19deg);
-        transform: skewX(-19deg);
-
-    }
-
-    .contact-btn:hover div span.background {
-        width: fit-content;
-
-    }
-
-    .contact-btn span.base {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        position: absolute;
-        width: fit-content;
-        left: 0;
-    }
-
-    .contact-btn .text {
-        padding: 10px 10px 10px 10px;
-        width: fit-content;
-        text-align: center;
-        border-style: solid;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: relative;
-        font-weight: bold;
-        align-items: center;
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-        border: 1px solid var(--logo-color);
-    }
-
-    .contact-btn:hover div.text {
-        color: black;
-    }
-
-}
-
-!*=============================New Skill Styles=================================*!
-.container-skill{
-=======
     /*.container-hi {*/
     /*    width: 100%;*/
     /*    margin: 0px 0px 0px 0px;*/
@@ -1049,7 +741,6 @@ nav {
     display: block;
     align-items: center;
     text-transform: uppercase;
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
     position: relative;
     letter-spacing: 3px;
     width: fit-content;
@@ -1304,7 +995,7 @@ nav {
 
 }
 
-!*Quote Styles*!
+/*Quote Styles*/
 .cursor-skill {
     position: relative;
     background-color: rgba(140, 120, 120, 0.3);
@@ -1387,12 +1078,8 @@ nav {
 .quote-block .poster .name:before {
     content: "- ";
 }
-<<<<<<< HEAD
-!*===============================Education Section===============================================================================================================*!
-=======
 
 /*===============================Education Section===============================================================================================================*/
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
 .education-section .about {
     font-size: 70px;
     color: #464545;
@@ -1696,8 +1383,8 @@ nav {
     }
 }
 
-!*===================================================================================*!
-!*---------------------------------Project Section-----------------------------------*!
+/*===================================================================================*/
+/*---------------------------------Project Section-----------------------------------*/
 .projects-section .about {
     font-size: 70px;
     color: #464545;
@@ -1831,190 +1518,6 @@ nav {
 
 }
 
-<<<<<<< HEAD
-!*============================================================================================================================*!
-
-@media screen and (min-width: 1024px) {
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav-center {
-        max-width: 1170px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .links-container {
-        height: auto !important;
-    }
-    ul.nav-links {
-        display: flex;
-        height: auto;
-    }
-    ul.nav-links li {
-        padding: 0;
-        width: 100px;
-    }
-    .social-icons {
-        display: none;
-    }
-    .toggle-icon {
-        display: none;
-    }
-    .resume {
-        display: block;
-    }
-    .icons {
-        display: block;
-    }
-    .hero-img img {
-        display: block;
-    }
-    !* -------------CONTACT BUTTON-------------- *!
-    .contact-button {
-        max-width: 220px;
-    }
-    !* -----------ACHIEVEMENT--------------- *!
-    .achievement {
-        display: flex;
-    }
-    .achievement h1 {
-        font-size: 4.5rem;
-    }
-    .ach {
-        width: 200px;
-    }
-    !* ----------ABOUT SECTION--------- *!
-    .about-description h2 {
-        font-size: 4rem;
-    }
-    .about-description img {
-        width: 80px;
-    }
-    .about-description #name {
-        max-width: 700px;
-        font-size: 6rem;
-    }
-    .about-description #job {
-        font-size: 2.5rem;
-    }
-    !* -----PART-2----- *!
-    !* -----PAGE2----- *!
-    .myself {
-        width: 400px;
-        top: -130px;
-        left: -55px;
-        font-size: 2.5rem;
-    }
-    .para1 img {
-        display: block;
-    }
-    .my-about-wrapper .about {
-        font-size: 12rem;
-    }
-    .myself::after,
-    .myself::before {
-        display: block;
-    }
-    .switch-wrapper {
-        display: block;
-    }
-    .my-story p {
-        width: 500px;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
-    .para2-wrapper {
-        align-items: center;
-        flex-direction: row;
-    }
-    !* -----SECTION-3----- *!
-    .section-3 {
-        width: 85%;
-        margin: 150px auto 70px;
-    }
-    .text-skills {
-        font-size: 20rem;
-        z-index: -1;
-    }
-    .acquired-skills {
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .acquired-skills img {
-        width: 35%;
-        margin: 0;
-    }
-    .acquired-skills p {
-        width: 500px;
-        margin: 20px 0;
-        font-size: 1.2rem;
-    }
-    .acquired-skills h2 {
-        font-size: 2rem;
-    }
-    !* -----CONTACT-SECTION----- *!
-    .contact-section {
-        width: 93%;
-        margin: 150px 0 0 auto;
-    }
-    .contact-section h2 {
-        font-size: 2rem;
-        line-height: 1.8rem;
-    }
-    .contact-section p {
-        width: 600px;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
-    .contact-section h1 {
-        font-size: 13rem;
-        left: -150px;
-        top: 200px;
-    }
-    .contact-form-wrapper {
-        flex-direction: row;
-        position: relative;
-    }
-    input[type="text"],
-    input[type="email"] {
-        width: 248px;
-    }
-    #text,
-    textarea {
-        width: 500px;
-    }
-    input[type="submit"] {
-        width: 150px;
-    }
-    .map {
-        width: 900px;
-        height: 700px;
-    }
-    !* -----PROJECTS-PAGE----- *!
-    .projects {
-        margin: 0 auto;
-        flex-direction: row;
-    }
-    .projects-description p {
-        width: 500px;
-        color: #adabab;
-        font-size: 1.2rem;
-    }
-    .projects h3 {
-        font-size:  2rem;
-        margin:  0 0 15px 0;
-        color: var(--logo-color);
-    }
-    .projects iframe {
-        width: 500px;
-        height: 315px;
-    }
-
-}*/
-=======
 /*============================================================================================================================*/
 
 
@@ -2345,4 +1848,3 @@ nav {
     right: 20px;
     display: none;
 }
->>>>>>> d430143b06dc757ee22d8ed6756d5725acc9d57a
